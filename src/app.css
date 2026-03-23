@@ -1,0 +1,279 @@
+@import "../tailwind.config.cjs";
+@import "tailwindcss";
+
+@theme {
+
+  /* Inverted Accent Colors */
+  --color-accent-0: rgba(0, 0, 0, 1);
+  --color-accent-5: rgba(0, 9, 19, 1);
+  --color-accent-10: rgba(0, 18, 38, 1);
+  --color-accent-15: rgba(0, 28, 58, 1);
+  --color-accent-20: rgba(0, 37, 77, 1);
+  --color-accent-30: rgba(0, 56, 116, 1);
+  --color-accent-40: rgba(0, 75, 155, 1);
+  --color-accent-50: rgba(0, 94, 194, 1);
+  --color-accent-60: rgba(47, 124, 206, 1);
+  --color-accent-70: rgba(94, 154, 218, 1);
+  --color-accent-80: rgba(141, 184, 230, 1);
+  --color-accent-85: rgba(164, 199, 236, 1);
+  --color-accent-90: rgba(188, 214, 242, 1);
+  --color-accent-95: rgba(211, 229, 248, 1);
+  --color-accent-100: rgba(235, 245, 255, 1);
+
+  /* Inverted Neutral Colors */
+  --color-n-0: rgba(9, 9, 11, 1);
+  --color-n-5: rgba(4, 7, 10, 1);
+  --color-n-10: rgba(9, 14, 20, 1);
+  --color-n-15: rgba(14, 21, 30, 1);
+  --color-n-20: rgba(18, 28, 40, 1);
+  --color-n-30: rgba(28, 43, 60, 1);
+  --color-n-40: rgba(37, 57, 80, 1);
+  --color-n-50: rgba(47, 72, 101, 1);
+  --color-n-60: rgba(79, 101, 127, 1);
+  --color-n-70: rgba(112, 131, 154, 1);
+  --color-n-80: rgba(144, 161, 180, 1);
+  --color-n-85: rgba(161, 176, 194, 1);
+  --color-n-90: rgba(177, 191, 207, 1);
+  --color-n-95: rgba(193, 206, 220, 1);
+  --color-n-100: rgba(235, 245, 255, 1);
+
+  /* Inverted Grayscale Colors */
+  --color-gs-0: rgba(9, 9, 11, 1);
+  --color-gs-5: rgba(12, 12, 13, 1);
+  --color-gs-10: rgba(24, 25, 26, 1);
+  --color-gs-15: rgba(36, 38, 39, 1);
+  --color-gs-20: rgba(48, 50, 53, 1);
+  --color-gs-30: rgba(73, 76, 79, 1);
+  --color-gs-40: rgba(97, 101, 106, 1);
+  --color-gs-50: rgba(122, 127, 133, 1);
+  --color-gs-60: rgba(148, 152, 157, 1);
+  --color-gs-70: rgba(175, 178, 181, 1);
+  --color-gs-80: rgba(201, 203, 206, 1);
+  --color-gs-85: rgba(215, 216, 218, 1);
+  --color-gs-90: rgba(228, 229, 230, 1);
+  --color-gs-95: rgba(241, 242, 242, 1);
+  --color-gs-100: rgba(255, 255, 255, 1);
+
+  --color-bg: var(--color-gs-100);
+  --color-text: var(--color-accent-10);
+
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-text);
+
+  --color-muted: var(--color-gs-85);
+  --color-muted-foreground: var(--color-n-20);
+
+  --color-accent: var(--color-gs-80);
+  --color-accent-foreground: var(--color-text);
+
+  --color-popover: var(--color-bg);
+  --color-popover-foreground: var(--color-text);
+
+  --color-border: var(--color-gs-80);
+  --color-input: var(--color-gs-80);
+
+  --color-card: var(--color-bg);
+  --color-card-foreground: var(--color-text);
+
+  --color-primary: var(--color-text);
+  --color-primary-foreground: var(--color-bg);
+
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+
+  --info: 204 94% 94%;
+  --info-foreground: 199 89% 48%;
+
+  --success: 149 80% 90%;
+  --success-foreground: 160 84% 39%;
+
+  --warning: 48 96% 89%;
+  --warning-foreground: 25 95% 53%;
+
+  --error: 0 93% 94%;
+  --error-foreground: 0 84% 60%;
+
+  --ring: 240 4.9% 83.9%;
+
+  --radius: 0.5rem;
+}
+
+:root {
+  font-family: "Jetbrains Mono", "Noto Sans", ui-sans-serif, sans-serif;
+
+  --shadow-color: var(--color-n-50);
+}
+
+body {
+  /* background: var(--color-bg); */
+  color: var(--color-text);
+}
+
+.dark,
+[data-kb-theme="dark"] {
+  --color-accent-0: rgba(235, 245, 255, 1);
+  --color-accent-5: rgba(211, 229, 248, 1);
+  --color-accent-10: rgba(188, 214, 242, 1);
+  --color-accent-15: rgba(164, 199, 236, 1);
+  --color-accent-20: rgba(141, 184, 230, 1);
+  --color-accent-30: rgba(94, 154, 218, 1);
+  --color-accent-40: rgba(47, 124, 206, 1);
+  --color-accent-50: rgba(0, 94, 194, 1);
+  --color-accent-60: rgba(0, 75, 155, 1);
+  --color-accent-70: rgba(0, 56, 116, 1);
+  --color-accent-80: rgba(0, 37, 77, 1);
+  --color-accent-85: rgba(0, 28, 58, 1);
+  --color-accent-90: rgba(0, 18, 38, 1);
+  --color-accent-95: rgba(0, 9, 19, 1);
+  --color-accent-100: rgba(0, 0, 0, 1);
+  --color-n-0: rgba(235, 245, 255, 1);
+  --color-n-5: rgba(193, 206, 220, 1);
+  --color-n-10: rgba(177, 191, 207, 1);
+  --color-n-15: rgba(161, 176, 194, 1);
+  --color-n-20: rgba(144, 161, 180, 1);
+  --color-n-30: rgba(112, 131, 154, 1);
+  --color-n-40: rgba(79, 101, 127, 1);
+  --color-n-50: rgba(47, 72, 101, 1);
+  --color-n-60: rgba(37, 57, 80, 1);
+  --color-n-70: rgba(28, 43, 60, 1);
+  --color-n-80: rgba(18, 28, 40, 1);
+  --color-n-85: rgba(14, 21, 30, 1);
+  --color-n-90: rgba(9, 14, 20, 1);
+  --color-n-95: rgba(4, 7, 10, 1);
+  --color-n-100: rgba(9, 9, 11, 1);
+  --color-gs-0: rgba(255, 255, 255, 1);
+  --color-gs-5: rgba(241, 242, 242, 1);
+  --color-gs-10: rgba(228, 229, 230, 1);
+  --color-gs-15: rgba(215, 216, 218, 1);
+  --color-gs-20: rgba(201, 203, 206, 1);
+  --color-gs-30: rgba(175, 178, 181, 1);
+  --color-gs-40: rgba(148, 152, 157, 1);
+  --color-gs-50: rgba(122, 127, 133, 1);
+  --color-gs-60: rgba(97, 101, 106, 1);
+  --color-gs-70: rgba(73, 76, 79, 1);
+  --color-gs-80: rgba(48, 50, 53, 1);
+  --color-gs-85: rgba(36, 38, 39, 1);
+  --color-gs-90: rgba(24, 25, 26, 1);
+  --color-gs-95: rgba(12, 12, 13, 1);
+  --color-gs-100: rgba(9, 9, 11, 1);
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+}
+
+@layer utilities {
+  .step {
+    counter-increment: step;
+  }
+
+  .step:before {
+    @apply absolute w-9 h-9 bg-muted rounded-full font-mono font-medium text-center text-base inline-flex items-center justify-center -indent-px border-4 border-background;
+    @apply ml-[-50px] mt-[-4px];
+    content: counter(step);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  border: 4px solid transparent;
+  background-clip: content-box;
+  @apply bg-accent;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+/* Blobs */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(var(--r)) scaleX(2);
+  }
+
+  50% {
+    transform: rotate(calc(var(--r) + calc(var(--rot)/2))) scale(var(--sX), var(--sY)) translateX(10px);
+  }
+
+  100% {
+    transform: rotate(calc(var(--r) + var(--rot))) scaleX(2);
+  }
+}
+
+/* Underline */
+
+.underline-animation {
+	transition: background-size 0.3s;
+	background-size: 0% 0.5px;
+	background-position-y: 100%;
+	background-position-x: 0%;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(currentcolor, currentcolor);
+}
+
+.underline-animation:hover {
+	background-size: 100% 0.5px;
+}
+
+.underline-animation-container:hover > .underline-animation {
+	background-size: 100% 1px;
+}
+
+/* Frame? */
+
+.frame-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.frame-wrapper img {
+  display: block;
+}
+
+.frame-wrapper::before,
+.frame-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--color-accent-40);
+}
+
+.frame-wrapper::before {
+  top: -6px;
+  left: -6px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.frame-wrapper::after {
+  bottom: -6px;
+  right: -6px;
+  border-left: none;
+  border-top: none;
+}
