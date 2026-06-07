@@ -1,14 +1,16 @@
 // @refresh reload
 import { createHandler, StartServer } from "@solidjs/start/server";
+import site from "./config/site";
 
 export default createHandler(() => (
   <StartServer
     document={({ assets, children, scripts }) => (
-      <html lang="en" class='dark'>
+      <html lang={site.lang} class='dark'>
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>{import.meta.env.PUBLIC_NAME}</title>
+          <title>{site.title}</title>
+          <meta name="description" content={site.description} />
 
           {/* <link rel="icon" href="/favicon.ico" /> */}
 
