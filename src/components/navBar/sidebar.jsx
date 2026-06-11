@@ -12,10 +12,10 @@ export function Sidebar(props) {
         <div>
             <div
                 onClick={() => props.setOpen(false)}
-                class={(props.open() ? 'backdrop-blur-sm z-30 ' : '-z-10') + ' fixed inset-0 transition-all duration-300 ease-in-out'}>
+                class={(props.open() ? 'backdrop-blur-sm z-110 ' : '-z-10') + ' fixed inset-0 transition-all duration-300 ease-in-out'}>
             </div>
 
-            <div class={(props.open() ? 'translate-x-0' : 'translate-x-full') + ' fixed right-0 z-50 w-64 h-screen bg-bg border-l-border border-l transition-transform duration-300 ease-in-out p-6'}>
+            <div class={(props.open() ? 'translate-x-0' : 'translate-x-full') + ' fixed right-0 z-120 w-64 h-screen bg-bg border-l-border border-l transition-transform duration-300 ease-in-out p-6'}>
                 <div class='h-full flex flex-col justify-between'>
                     <div class='space-y-4 select-none'>
                         <div class='w-full flex justify-between'>
@@ -33,7 +33,7 @@ export function Sidebar(props) {
                                         <For each={section}>
                                             {(link) =>
                                                 <div class='w-min'>
-                                                    <Link href={link.href} external={link.external}>
+                                                    <Link href={link.href} onClick={() => !link.external ? props.setOpen(false) : 0} external={link.external}>
                                                         {link.label}
                                                     </Link>
                                                 </div>

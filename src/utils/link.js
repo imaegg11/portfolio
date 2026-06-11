@@ -6,10 +6,9 @@ export const Link = (props) => {
     if (props.external) {
         return (
             <a 
-                href={props.href} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class={`${props.class || ""}`}
+                {...props}
             >
                 {resolved()}
             </a>
@@ -17,8 +16,7 @@ export const Link = (props) => {
     } else {
         return (
             <a 
-                href={props.href} 
-                class={`${props.class || ""}`}
+                {...props}
             >
                 {resolved()}
             </a>
