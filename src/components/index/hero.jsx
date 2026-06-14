@@ -1,4 +1,4 @@
-import { createSignal, onCleanup, onMount } from "solid-js"
+import { createSignal, onCleanup, onMount, useContext } from "solid-js"
 import site from "~/config/site";
 
 import Right from "./right";
@@ -7,9 +7,12 @@ import Background from "./background";
 import { crypto } from "~/utils/crypto";
 import Logo from "~/utils/logo";
 import { IconLink } from "~/utils/link";
+import { SidebarContext } from "~/utils/context";
 
 
-export function Hero(props) {
+export function Hero() {
+    const { setOpen } = useContext(SidebarContext)
+
     const [name, setName] = createSignal(`${site.author.name}!`)
 
     let interval;
@@ -52,8 +55,8 @@ export function Hero(props) {
                         </div>
 
                     </div>
-                    {/* Fix Later */}
-                    <p class='text-xs text-gs-50 my-4 ml-8 hover:cursor-pointer underline-animation-container w-fit [&:hover>span:nth-child(2)]:pl-2'>
+
+                    <p onClick={() => setOpen(true)} class='text-xs text-gs-50 my-4 ml-8 hover:cursor-pointer underline-animation-container w-fit [&:hover>span:nth-child(2)]:pl-2'>
                         <span class='underline-animation w-fit mr-2'>See More</span> <span class='transition-all'>→</span>
                     </p>
                 </div>

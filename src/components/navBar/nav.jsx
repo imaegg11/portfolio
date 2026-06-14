@@ -1,17 +1,19 @@
-import { createSignal } from "solid-js";
+import { useContext } from "solid-js";
 import { Sidebar } from "./sidebar";
 
 import site from "~/config/site";
 import { Link } from "~/utils/link";
+import { SidebarContext } from "~/utils/context";
 
 export default function Nav() {
 
-    const [open, setOpen] = createSignal(false);
+    const { open, setOpen } = useContext(SidebarContext)
 
     return (
         <>
             <Sidebar open={open} setOpen={setOpen}></Sidebar>
 
+            {/* TODO: Fix this crap, can't get blur bg to look nice */}
             <div class='sticky backdrop-blur-md z-100 top-0 py-10 px-40 h-24 w-full flex justify-between text-gs-20 tracking-wide text-sm'>
                 <a href='/'>Home</a>
                 <div class='flex gap-12'>
