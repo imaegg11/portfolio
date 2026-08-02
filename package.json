@@ -2,18 +2,26 @@
   "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "start": "vite start",
-    "preview": "vite preview"
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start"
   },
   "dependencies": {
+    "@kobalte/core": "^0.13.11",
     "@solidjs/router": "^0.15.0",
-    "@solidjs/start": "2.0.0-alpha.2",
-    "nitro": "3.0.1-alpha.2",
-    "rollup-plugin-visualizer": "^7.0.1",
+    "@solidjs/start": "^1.1.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "codeflask": "^1.4.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-solid": "^8.6.0",
+    "gridstack": "^12.4.2",
+    "nanoid": "^5.1.6",
     "solid-js": "^1.9.5",
-    "vite": "^7.0.0"
+    "solid-sonner": "^0.2.8",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss-animate": "^1.0.7",
+    "vinxi": "^0.5.7"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.7",
