@@ -5,7 +5,7 @@ import site from "./config/site";
 export default createHandler(() => (
   <StartServer
     document={({ assets, children, scripts }) => (
-      <html lang={site.lang} class='dark'>
+      <html lang={site.lang} class='dark scrollbar'>
         <head>
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

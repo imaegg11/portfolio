@@ -186,6 +186,24 @@ body {
     @apply ml-[-50px] mt-[-4px];
     content: counter(step);
   }
+
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent-40) transparent;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 100vh;
+  }
+
+    .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @media (max-width: 640px) {
@@ -228,20 +246,20 @@ body {
 /* Underline */
 
 .underline-animation {
-	transition: background-size 0.3s;
-	background-size: 0% 0.5px;
-	background-position-y: 100%;
-	background-position-x: 0%;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(currentcolor, currentcolor);
+  transition: background-size 0.3s;
+  background-size: 0% 0.5px;
+  background-position-y: 100%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(currentcolor, currentcolor);
 }
 
 .underline-animation:hover {
-	background-size: 100% 0.5px;
+  background-size: 100% 0.5px;
 }
 
-.underline-animation-container:hover > .underline-animation {
-	background-size: 100% 1px;
+.underline-animation-container:hover>.underline-animation {
+  background-size: 100% 1px;
 }
 
 /* Frame? */
