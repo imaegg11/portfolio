@@ -2,7 +2,7 @@ import site from "~/config/site"
 
 export default function Experience() {
     return (
-        <div class='px-8 mt-8 mb-16 text-base leading-relaxed tracking-wide'>
+        <div class='mb-16 text-base leading-relaxed tracking-wide'>
             <div class='mb-8 space-y-2'>
                 <p class='text-sm uppercase tracking-[0.22em] text-gs-70'>Where I have been</p>
                 <p>

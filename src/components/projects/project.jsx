@@ -1,9 +1,16 @@
-export function Project() {
+import { twMerge } from "tailwind-merge";
+
+
+export function Project(props) {
+
+    const aspect = () => props.aspect;
+    let ex_class = ""
+
     return (
-        <div class='overflow-hidden border border-gs-90 rounded-xl'>
-            <img class='w-full h-1/2 object-cover' src='wt.png'></img>
+        <div class={twMerge('overflow-hidden border border-gs-90 rounded-xl', ex_class, props.class)}>
+            <img class='w-full object-cover' src='wt.png'></img>
             <div class='p-4'>
-                <p>War Thunder</p>
+                <p class='text-xl'>War Thunder</p>
                 <p class='text-sm line-clamp-4'>
                     War Thunder is a free-to-play online multiplayer military combat game that allows players to take control of a massive variety of historically inspired vehicles, including aircraft, tanks, helicopters, and naval ships from the early 20th century to the modern era. The game focuses on realistic combined-arms warfare, where players engage in large-scale battles using strategy, teamwork, and knowledge of their vehicles’ strengths and weaknesses.
 

@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <div class='px-8 mt-8 mb-24 text-base leading-relaxed tracking-wide'>
+        <div class='mt-8 mb-24 text-base leading-relaxed tracking-wide'>
             <div class='mb-4 space-y-2'>
                 <p class='text-sm uppercase tracking-[0.22em] text-gs-70'>Some things I have used</p>
                 <p>

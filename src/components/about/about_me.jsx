@@ -6,8 +6,8 @@ import Logo from "~/utils/logo";
 export default function AboutMe() {
     const name = site.author.name;
 
-    return (
-        <div class='px-60 mt-4'>
+    return  (
+        <div>
             <p class='text-3xl'>About Me</p>
             <div class='grid gap-4 grid-cols-[1fr_2fr] mt-8'>
                 <div class="frame-wrapper p-4">

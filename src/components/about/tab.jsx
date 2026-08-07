@@ -18,7 +18,7 @@ export default function Tab() {
     })
 
     return (
-        <div class='px-60 mt-12 text-[18px]'>
+        <div class='mt-12 text-[18px]'>
             <div class='flex space-x-8 px-8 items-center'>
                 <For each={Object.keys(store.content)}>
                     {(key, index) => (
@@ -32,8 +32,9 @@ export default function Tab() {
                     )}
                 </For>
             </div>
-            
-            <Dynamic component={store.content[store.active]}></Dynamic>
+            <div class='px-8 mt-8'>
+                <Dynamic component={store.content[store.active]}></Dynamic>
+            </div>
         </div>
     )
-} ``
+} 

@@ -5,7 +5,7 @@ export default function Interests() {
     const categories = site.about_me.interests;
 
     return (
-        <div class='px-8 mt-8 mb-16 text-base leading-relaxed tracking-wide'>
+        <div class='mb-16 text-base leading-relaxed tracking-wide'>
             <div class='mb-8 space-y-2'>
                 <p class='text-sm uppercase tracking-[0.22em] text-gs-70'>A few things I like</p>
                 <p>
@@ -33,7 +33,7 @@ export default function Interests() {
                                 ))}
                             </ol>
                             <Show when={category.selected}>
-                                <div class='space-y-2'>
+                                <div class='space-y-2 flex flex-wrap items-center'>
                                     <Show when={category.selected.img}>
                                         <img class='max-h-32 mx-auto' src={category.selected.img}></img>
                                     </Show>
