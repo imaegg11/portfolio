@@ -1,7 +1,7 @@
 import site from "~/config/site";
 
 import { Link } from "~/utils/link";
-import Logo from "~/utils/logo";
+import Icon from "~/utils/icon";
 
 export default function AboutMe() {
     const name = site.author.name;
@@ -29,7 +29,7 @@ export default function AboutMe() {
                             external={true}
                             class='flex items-center gap-2 hover:text-accent-30 transition-all'
                         >
-                            {Logo.github()} Github
+                            {Icon.github()} Github
                         </Link>
 
                         <div class="w-px h-5 bg-current text-gs-70 rotate-20"></div>
@@ -39,7 +39,7 @@ export default function AboutMe() {
                             external={true}
                             class='flex items-center gap-2 hover:text-accent-30 transition-all'
                         >
-                            {Logo.linkedin()}
+                            {Icon.linkedin()}
                             Linkedin
                         </Link>
 
@@ -50,7 +50,7 @@ export default function AboutMe() {
                             external={true}
                             class='flex items-center gap-2 hover:text-accent-30 transition-all'
                         >
-                            {Logo.email()}
+                            {Icon.email()}
                             Email
                         </Link>
                     </div>

@@ -5,7 +5,7 @@ import Right from "./right";
 import Background from "./background";
 
 import { crypto } from "~/utils/crypto";
-import Logo from "~/utils/logo";
+import Icon from "~/utils/icon";
 import { IconLink } from "~/utils/link";
 import { SidebarContext } from "~/utils/context";
 
@@ -41,16 +41,16 @@ export function Hero() {
                     <div class='mt-4 text-xs flex items-center opacity-60 gap-px'>
                         
                         <IconLink href={site.social.github} external={true}>
-                            {Logo.github()}
+                            {Icon.github()}
                         </IconLink>
 
                         <IconLink href={site.social.email} external={true}>
-                            {Logo.email()}
+                            {Icon.email()}
                         </IconLink>
 
                         <div class="w-px h-4 bg-current m-2"></div>
                         <div class='flex items-center gap-1 m-2'>
-                            {Logo.location()}
+                            {Icon.location()}
                             <p>{site.author.organization} @ {site.author.location}</p>
                         </div>
 

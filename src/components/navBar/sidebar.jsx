@@ -1,6 +1,6 @@
 import site from "~/config/site"
 import { Link } from "~/utils/link"
-import Logo from "~/utils/logo"
+import Icon from "~/utils/icon"
 
 export function Sidebar(props) {
 
@@ -56,7 +56,7 @@ export function Sidebar(props) {
                                 class="flex items-center hover:text-accent-30 transition-colors"
                                 title={`View deployment commit ${hash}`}
                             >
-                                {Logo.commit()}
+                                {Icon.commit()}
                                 <p>{short}</p>
                             </Link>
                         </div>

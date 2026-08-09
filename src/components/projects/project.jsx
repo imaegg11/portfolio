@@ -1,4 +1,7 @@
+import { For } from "solid-js";
 import { twMerge } from "tailwind-merge";
+import Tag from "./tag";
+import Icon from "~/utils/icon";
 
 
 export function Project(props) {
@@ -6,9 +9,13 @@ export function Project(props) {
     const aspect = () => props.aspect;
     let ex_class = ""
 
+    const pos = ['wt_sanitized.png', 'wild_robot_sanitized.jpg', 'flower_sanitized.jpg']
+
+    const tags = ['Multiplayer', 'Military', 'Vehicle Combat', 'War Simulation', 'Free-to-play', 'Strategy']
+
     return (
-        <div class={twMerge('overflow-hidden border border-gs-90 rounded-xl', ex_class, props.class)}>
-            <img class='w-full object-cover' src='wt.png'></img>
+        <div class={twMerge('overflow-hidden border border-gs-90 rounded-xl cursor-pointer select-none', ex_class, props.class)}>
+            <img class='w-full object-cover' src={pos[Math.floor(Math.random() * 3)]}></img>
             <div class='p-4'>
                 <p class='text-xl'>War Thunder</p>
                 <p class='text-sm line-clamp-4'>
@@ -16,13 +23,17 @@ export function Project(props) {
 
                     Featuring thousands of accurately modeled vehicles from numerous nations, War Thunder offers multiple game modes ranging from arcade-style battles to highly realistic simulations. Players can research and unlock new vehicles, upgrade their lineups, and progress through detailed technology trees representing different military forces. With its emphasis on historical accuracy, tactical gameplay, and intense PvP combat, War Thunder provides an immersive battlefield experience for fans of military history, vehicle simulation, and competitive online warfare.
                 </p>
-                <div class='flex *:shrink-0 overflow-y-auto *:text-sm mt-2 no-scrollbar select-none'>
-                    <p>Multiplayer</p>
-                    <p>Military</p>
-                    <p>Vehicle Combat</p>
-                    <p>War Simulation</p>
-                    <p>Free-to-play</p>
-                    <p>Strategy</p>
+                <div class='flex gap-2 mt-4 items-center'>
+                    <div class='my-auto'>
+                        {Icon.tag(18)}
+                    </div>
+                    <div class='flex flex-wrap gap-2 max-h-6 overflow-hidden'>
+                        <For each={tags}>
+                            {(item) => {
+                                return <Tag name={item}></Tag>
+                            }}
+                        </For>
+                    </div>
                 </div>
             </div>
         </div>
