@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "start": "vinxi start",
-    "prebuild": "node ./scripts/fix_images.js"
+    "start": "vinxi start"
   },
   "dependencies": {
     "@emnapi/runtime": "^1.11.3",
