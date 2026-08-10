@@ -9,7 +9,7 @@ export function Project(props) {
     const aspect = () => props.aspect;
     let ex_class = ""
 
-    const pos = ['wt_sanitized.png', 'wild_robot_sanitized.jpg', 'flower_sanitized.jpg']
+    const pos = ['projects/wt_sanitized.png', 'projects/wild_robot_sanitized.jpg', 'projects/flower_sanitized.jpg']
 
     const tags = ['Multiplayer', 'Military', 'Vehicle Combat', 'War Simulation', 'Free-to-play', 'Strategy']
 
