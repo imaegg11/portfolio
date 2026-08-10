@@ -7,7 +7,7 @@ export default function Projects() {
             {/* <p class="text-center mt-50 w-full text-sm text-gs-50">Nothing here for now. Come back when there's more :)</p> */}
         
             <div class='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-8 mx-4'>
-                <Project></Project>
+                <Project aspect='3/1'></Project>
                 <Project></Project>
                 <Project></Project>
                 <Project></Project>
