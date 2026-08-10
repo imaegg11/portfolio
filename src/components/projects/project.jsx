@@ -9,15 +9,18 @@ export function Project(props) {
     const aspect = () => props.aspect;
     let ex_class = ''
 
+    const col_span = ['lg:col-span-1', 'lg:col-span-2', 'lg:col-span-3']
+    const row_span = ['lg:row-span-1', 'lg:row-span-2', 'lg:row-span-3', 'lg:row-span-4', 'lg:row-span-5']
+
     if (aspect()) {
-        ex_class = `lg:col-span-${aspect()[0]} lg:row-span-${aspect()[2]} lg:grid lg:grid-cols-[3fr_4fr]`
+        ex_class = `${col_span[aspect()[0] - 1]} ${row_span[aspect()[2] - 1]} lg:grid lg:grid-cols-[3fr_4fr]`
     }
 
     const pos = ['wt_sanitized.png', 'wild_robot_sanitized.jpg', 'flower_sanitized.jpg']
 
     // temp
     if (import.meta.env.PROD) {
-        for (let i = 0; i < pos; i++) {
+        for (let i = 0; i < pos.length; i++) {
             pos[i] = 'projects/' + pos[i]
         }
     }
