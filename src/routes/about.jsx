@@ -3,7 +3,7 @@ import Tab from "~/components/about/tab";
 
 export default function About() {
     return (
-        <div class='lg:px-60 sm:px-8 mt-4'>
+        <div class='lg:px-60 px-8 mt-4'>
             <AboutMe></AboutMe>
             <Tab></Tab>
         </div>       
