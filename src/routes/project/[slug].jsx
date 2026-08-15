@@ -4,7 +4,6 @@ import NotFound from "~/components/not_found";
 
 import { get_mdx } from "~/utils/get_mdx";
 
-
 export default function Project() {
   const params = useParams();
 
@@ -13,7 +12,9 @@ export default function Project() {
   if (content) {
     console.log(content.frontmatter)
 
-    return <content.default></content.default>
+    return <div class='*:[all:revert]'>
+      <content.default></content.default>
+    </div>
   } else {
     return (
       <>

@@ -31,9 +31,7 @@ export default defineConfig({
         jsx: true,
         jsxImportSource: "solid-js",
         providerImportSource: "solid-mdx",
-        mdxOptions: {
-    remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
-  },
+        remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter]
       }),
     ],
     define: {
