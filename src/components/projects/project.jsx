@@ -30,7 +30,7 @@ export function ProjectTile(props) {
                     'w-full': !aspect,
                     'lg:h-full': aspect
                 }}
-                src={`${trim(frontmatter.image.url)[0]}_sanitized${trim(frontmatter.image.url)[1]}`} alt={frontmatter.image.alt}></img>
+                src={`/projects/${trim(frontmatter.image.url)[0]}_sanitized${trim(frontmatter.image.url)[1]}`} alt={frontmatter.image.alt}></img>
             <div class='p-4'>
                 <p class='text-xl'>{frontmatter.title}</p>
                 <p class='text-sm line-clamp-4'
