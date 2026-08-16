@@ -16,7 +16,7 @@ export default function Tag(props) {
     // I wonder where this idea was taken from 🤔
 
     return (
-        <div class='px-2 py-1 bg-gs-90 rounded-md text-xs shrink-0'
+        <div class='px-2 py-1 bg-gs-90 rounded-md text-xs shrink-0 h-6'
             style={{ "color": color }}
         >
             {name()}

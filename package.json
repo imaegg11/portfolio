@@ -2,6 +2,8 @@
   "name": "example-with-tailwindcss",
   "type": "module",
   "scripts": {
+    "test": "vitest",
+    "test:run": "vitest run",
     "dev": "vinxi dev",
     "prebuild": "node ./scripts/fix_images.js",
     "build": "vinxi build",
@@ -32,7 +34,9 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.0.7",
-    "tailwindcss": "^4.0.7"
+    "front-matter": "^4.0.2",
+    "tailwindcss": "^4.0.7",
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">=22"
