@@ -1,7 +1,6 @@
 // @refresh reload
 import { createHandler, StartServer } from "@solidjs/start/server";
 import site from "./config/site";
-import { Show } from "solid-js";
 
 export default createHandler(() => (
   <StartServer
@@ -19,17 +18,10 @@ export default createHandler(() => (
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
           <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
           {/* <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet"></link> */}
-          
           {assets}
         </head>
         <body>
-          <Show when={!(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))} fallback={
-            <div class='w-screen h-screen flex items-center justify-center flex-wrap'>
-              <p class='text-center'>Mobile support not available<br></br>Check back when it's been updated</p>
-            </div>
-          }>
-            <div id="app">{children}</div>
-          </Show>
+          <div id="app">{children}</div>
           {scripts}
         </body>
       </html>
