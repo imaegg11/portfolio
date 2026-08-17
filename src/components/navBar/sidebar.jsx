@@ -61,7 +61,7 @@ export function Sidebar(props) {
                             </Link>
                         </div>
 
-                        <p>
+                        {/* <p>
 
                             <Link
                                 href="https://v2.jasoncameron.dev/abacus/"
@@ -70,7 +70,7 @@ export function Sidebar(props) {
                             >
                                 123,456,789
                             </Link> views and counting
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>

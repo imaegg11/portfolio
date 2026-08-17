@@ -16,7 +16,7 @@ export default {
             { label: 'Posts', href: '/posts' }
         ],
         [
-            { label: 'Resume', href: '/resume' },
+            { label: 'Resume', href: '/resume.pdf' },
             { label: 'Homepage', href: 'https://ai.home-bcp.pages.dev/', external: true },
         ]
     ],
