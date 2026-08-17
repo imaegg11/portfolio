@@ -9,19 +9,32 @@ function check_dupe() {
 
     const files = fs.readdirSync(dir);
 
-    const slugs = new Set([])
+    const slugs = {}
 
     for (let file of files) {
         const content = fm(fs.readFileSync(dir + file, 'utf-8'))
         const slug = content.attributes.slug 
 
-        if (slugs.has(slug)) return true
-        else slugs.add(slug)
+        if (slug in slugs) slugs[slug].push(file)
+        else slugs[slug] = [file]
+        
     }
 
-    return false
+    const dupes = Object.entries(slugs).filter(item => item[1].length > 1)
+
+    return dupes
 }
 
 it('duplicate slug check', () => {
-    expect(check_dupe()).toBeFalsy() // Update later to explain which ones
+    const dupe_slugs = check_dupe()
+
+    let err_string = "Found duplicate slugs:"
+    
+    for (let dupe of dupe_slugs) {
+        err_string += `\n\t${dupe[0]} found for following files: ${dupe[1].join(", ")}`
+    }
+
+    err_string += "\n\n"
+
+    expect(dupe_slugs, err_string).toEqual([]) // Eh, it's good enough
 })

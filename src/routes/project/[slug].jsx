@@ -6,6 +6,7 @@ import Tag from "~/components/projects/tag";
 
 import { get_mdx } from "~/utils/get_mdx";
 import Icon from "~/utils/icon";
+import trim from "~/utils/trim";
 import { IconLink, Link } from "~/utils/link";
 
 export default function Project() {
@@ -33,11 +34,11 @@ export default function Project() {
                 <span class='transition-all'>←</span> <span class='underline-animation w-fit ml-2'>Back</span>
             </Link>
 
-            <div class='mt-4 lg:px-40'>
+            <div class='mt-4 lg:px-50 md:px-30'>
                 <div>
                     <div class='frame-wrapper p-4 rounded-md'>
                         <img class='rounded-md'
-                            src={`/projects/${frontmatter.image.url}`}
+                            src={`/projects/${trim(frontmatter.image.url)[0]}_sanitized${trim(frontmatter.image.url)[1]}`}
                             alt={frontmatter.image.alt}
                         ></img>
                     </div>

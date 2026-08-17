@@ -1,6 +1,7 @@
 // @refresh reload
 import { createHandler, StartServer } from "@solidjs/start/server";
 import site from "./config/site";
+import { Show } from "solid-js";
 
 export default createHandler(() => (
   <StartServer
@@ -22,7 +23,13 @@ export default createHandler(() => (
           {assets}
         </head>
         <body>
-          <div id="app">{children}</div>
+          <Show when={!(/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent))} fallback={
+            <div class='w-screen h-screen flex items-center justify-center flex-wrap'>
+              <p class='text-center'>Mobile support not available<br></br>Check back when it's been updated</p>
+            </div>
+          }>
+            <div id="app">{children}</div>
+          </Show>
           {scripts}
         </body>
       </html>
