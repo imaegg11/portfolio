@@ -36,12 +36,12 @@ export default function Project() {
 
             <div class='mt-4 lg:px-50 md:px-30'>
                 <div>
-                    <div class='frame-wrapper p-4 rounded-md'>
-                        <img class='rounded-md'
+                    <Link class='w-full frame-wrapper p-4 rounded-md' title={`View full image at: ${window.location.origin}/projects/${frontmatter.image.url}`} href={`/projects/${frontmatter.image.url}`}>
+                        <img class='rounded-sm w-full'
                             src={`/projects/${trim(frontmatter.image.url)[0]}_sanitized${trim(frontmatter.image.url)[1]}`}
                             alt={frontmatter.image.alt}
                         ></img>
-                    </div>
+                    </Link>
 
                     <div class='flex gap-2 mt-4 lg:mx-8 items-center justify-between'>
                         <div class='flex gap-2'>
@@ -62,7 +62,7 @@ export default function Project() {
                     </div>
 
                 </div>
-                <div class='mt-4 *:[all:revert] [&_:is(h1,h2,h3)]:text-accent-30 [&_li]:list-["-"] [&_li]:pl-4'>
+                <div class='mt-4 mb-16 *:[all:revert] [&_:is(h1,h2,h3)]:text-accent-30 [&_li]:list-["-"] [&_li]:pl-4 [&_p]:leading-relaxed'>
                     <content.default components={{
                         a: (props) => (
                             <Link href={props.href}

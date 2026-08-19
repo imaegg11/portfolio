@@ -1,0 +1,25 @@
+---
+title: Homepage
+description: A small SolidJS homepage with configurable search shortcuts, widgets, and settings.
+tags: [solidjs, solidstart, javascript, tailwindcss, homepage, web]
+external: https://github.com/imaegg11/home-v3
+
+image:
+    url: homepage.png
+    alt: Homepage
+
+index: 0
+aspect: 3/1
+slug: home
+---
+
+This is the third version of my homepage. A basic, simple start page with the time, search bar, and a few optional widgets, meant to be a replacement for the Firefox start page. The whole thing is configurable from the page itself with a simple settings menu rather than having everything hardcoded.
+
+## Key Features
+
+* **Search shortcuts:** The search bar supports configurable prefixes such as `wiki ${value}` that can turn the input into a direct URL. Regular searches fall back to a pre-selected search engine.
+* **Widgets:** Widgets can be easily added, removed, resized, and moved around, providing easy access to information about things. 
+* **Customization:** There are settings for themes, a background image, custom CSS, search settings, and widgets.
+* **Local settings:** Settings are all kept in `localStorage`, with easy export/import 
+
+It's all built with solidstart and tailwind, with a few other libraries for the UI components, carousel, code editor, and widget layout.

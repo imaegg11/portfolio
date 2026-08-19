@@ -7,6 +7,10 @@ const files = fs.readdirSync(dir)
 
 for (let file of files) {
     const file_dir = `${dir}/${file}`;
+    const file_without_ext = file_dir.slice(0, -path.extname(file_dir).length);
+
+    if (file_without_ext.slice(-"_sanitized".length) == "_sanitized") continue // Don't sanitize images that already sanitized
+
     const output = file_dir.slice(0, -path.extname(file_dir).length) + "_sanitized" + path.extname(file_dir);
 
     const { width, height } = await sharp(file_dir).metadata();
