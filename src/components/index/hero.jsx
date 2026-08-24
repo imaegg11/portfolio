@@ -36,7 +36,8 @@ export function Hero() {
                     <p class='text-[18px]'>{site.author.shortBio}</p>
                     <p class='mt-1 w-60 text-xs opacity-60'>
                         {/* "Better to remain silent and be thought a fool than to speak and remove all doubt." */}
-                        "Responsive design are only for those that care about mobile. And unfortunately I don't care."
+                        {/* "Responsive design are only for those that care about mobile. And unfortunately I don't care." */}
+                        "Responsive design is hard. I'll get around to implementing it someday..."
                     </p>
                     <div class='mt-4 text-xs flex items-center opacity-60 gap-px'>
                         
@@ -44,8 +45,8 @@ export function Hero() {
                             {Icon.github()}
                         </IconLink>
 
-                        <IconLink href={site.social.email} external={true}>
-                            {Icon.email()}
+                        <IconLink href={site.social.linkedin} external={true}>
+                            {Icon.linkedin()}
                         </IconLink>
 
                         <div class="w-px h-4 bg-current m-2"></div>

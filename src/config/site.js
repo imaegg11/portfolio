@@ -16,14 +16,14 @@ export default {
             { label: 'Posts', href: '/posts' }
         ],
         [
-            { label: 'Resume', href: '/resume.pdf' },
+            { label: 'Resume', href: '/resume.pdf', external: true },
             { label: 'Homepage', href: 'https://ai.home-bcp.pages.dev/', external: true },
         ]
     ],
     social: {
         github: `https://github.com/imaegg11`,
         linkedin: 'https://www.linkedin.com/',
-        email: `mailto:contact@domain.com`
+        // email: `mailto:contact@domain.com`
     },
     ctas: {
 

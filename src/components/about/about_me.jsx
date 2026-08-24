@@ -43,16 +43,16 @@ export default function AboutMe() {
                             Linkedin
                         </Link>
 
-                        <div class="w-px h-5 bg-current text-gs-70 rotate-20"></div>
+                        {/* <div class="w-px h-5 bg-current text-gs-70 rotate-20"></div> */}
 
-                        <Link
+                        {/* <Link
                             href={site.social.email}
                             external={true}
                             class='flex items-center gap-2 hover:text-accent-30 transition-all'
                         >
                             {Icon.email()}
                             Email
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>
