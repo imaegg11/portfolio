@@ -36,7 +36,7 @@ export default function Project() {
 
             <div class='mt-4 lg:px-50 md:px-30'>
                 <div>
-                    <Link class='w-full frame-wrapper p-4 rounded-md' title={`View full image at: ${window.location.origin}/projects/${frontmatter.image.url}`} href={`/projects/${frontmatter.image.url}`}>
+                    <Link public class='w-full frame-wrapper p-4 rounded-md' title={`View full image at: ${window.location.origin}/projects/${frontmatter.image.url}`} href={`/projects/${frontmatter.image.url}`}>
                         <img class='rounded-sm w-full'
                             src={`/projects/${trim(frontmatter.image.url)[0]}_sanitized${trim(frontmatter.image.url)[1]}`}
                             alt={frontmatter.image.alt}

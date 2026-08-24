@@ -7,7 +7,16 @@ export const Link = (props) => {
         return (
             <a 
                 target="_blank" 
-                rel="noopener noreferrer" 
+                rel="noopener noreferrer external" 
+                {...props}
+            >
+                {resolved()}
+            </a>
+        );
+    } else if (props.public) {
+        return (
+            <a 
+                rel="external"
                 {...props}
             >
                 {resolved()}
