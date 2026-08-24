@@ -15,13 +15,13 @@ export default function AboutMe() {
                 </div>
                 <div class='px-8 mt-4 leading-relaxed tracking-wide space-y-4'>
                     <p>
-                        Hello! I'm {name.split(" ")[0]} and I am currently a student at the University of Waterloo studying software engineering. Having picked up programming at the start of the COVID pandemic, I have since been fascinated by this field.
+                        Hello! I'm {name.split(" ")[0]} and I am a incoming student to the University of Waterloo studying software engineering. Having picked up programming at the start of the COVID pandemic, I have since been fascinated by this field.
                     </p>
                     <p>
                         As a programmer, I am well versed in both Python and Javascript. Some personal projects that I have made include a fully customizable homepage, typehere (a persistent local typing playground) and chess built entirely from scratch using pygame. In addition, I have also helped to maintain metropolis.
                     </p>
                     <p>
-                        Currently, I am hoping to explore more about neural networks and machine learning in general. Outside of developing, I also enjoy to game with friends and just chill. Please hesitate when trying to reach out to me.
+                        Currently, I am hoping to explore more about neural networks and machine learning in general. Outside of developing, I also enjoy to game with friends and just chill. 
                     </p>
                     <div class='mt-8 text-sm flex gap-6 items-center'>
                         <Link
