@@ -29,3 +29,6 @@ Thumbs.db
 
 # Rollup visualizer 
 bundle-stats.html
+
+# Sanitized versions of images
+*_sanitized.*

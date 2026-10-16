@@ -45,8 +45,8 @@ export function Hero() {
                             {Icon.github()}
                         </IconLink>
 
-                        <IconLink href={site.social.linkedin} external={true}>
-                            {Icon.linkedin()}
+                        <IconLink href={site.social.email} external={true}>
+                            {Icon.email()}
                         </IconLink>
 
                         <div class="w-px h-4 bg-current m-2"></div>

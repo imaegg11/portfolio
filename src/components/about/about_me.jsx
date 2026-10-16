@@ -15,7 +15,7 @@ export default function AboutMe() {
                 </div>
                 <div class='px-8 mt-4 leading-relaxed tracking-wide space-y-4'>
                     <p>
-                        Hello! I'm {name.split(" ")[0]} and I am a incoming student to the University of Waterloo studying software engineering. Having picked up programming at the start of the COVID pandemic, I have since been fascinated by this field.
+                        Hello! I'm {name.split(" ")[0]} and I am a student to the University of Waterloo studying software engineering. Having picked up programming at the start of the COVID pandemic, I have since been fascinated by this field.
                     </p>
                     <p>
                         As a programmer, I am well versed in both Python and Javascript. Some personal projects that I have made include a fully customizable homepage, typehere (a persistent local typing playground) and chess built entirely from scratch using pygame. In addition, I have also helped to maintain metropolis.
@@ -43,16 +43,16 @@ export default function AboutMe() {
                             Linkedin
                         </Link>
 
-                        {/* <div class="w-px h-5 bg-current text-gs-70 rotate-20"></div> */}
+                        <div class="w-px h-5 bg-current text-gs-70 rotate-20"></div>
 
-                        {/* <Link
+                        <Link
                             href={site.social.email}
                             external={true}
                             class='flex items-center gap-2 hover:text-accent-30 transition-all'
                         >
                             {Icon.email()}
                             Email
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
             </div>

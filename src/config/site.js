@@ -22,8 +22,8 @@ export default {
     ],
     social: {
         github: `https://github.com/imaegg11`,
-        linkedin: 'https://www.linkedin.com/',
-        // email: `mailto:contact@domain.com`
+        linkedin: 'https://www.linkedin.com/in/alex-yan-623264434/',
+        email: `mailto:alex38yan@gmail.com`
     },
     ctas: {
 
